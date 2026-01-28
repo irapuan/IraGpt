@@ -1,0 +1,14 @@
+[package]
+name = "lp_solver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+indicatif = "0.17.11"
+rand = "0.9.0"
+good_lp = { version = "1.12.0", features=["highs"], default-features=false }
+highs = "1.7.0"
+dialoguer = { version = "0.11.0", features = ["fuzzy-select"] }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.135"
+is-terminal = "0.4.17"
