@@ -59,7 +59,10 @@ cargo build --release
 
 ## Como Usar
 
-1. Prepare um arquivo `players.json` com a lista de jogadores e suas notas.
+1. Prepare um arquivo `players.json` com a lista de jogadores e suas notas. Você pode usar o arquivo [players_sample.json](./players_sample.json) (com personagens da Marvel) como exemplo ou ponto de partida:
+   ```bash
+   cp players_sample.json players.json
+   ```
 2. Execute o binário:
    ```bash
    ./target/release/IraGpt
