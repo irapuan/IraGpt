@@ -62,7 +62,7 @@ cargo build --release
 1. Prepare um arquivo `players.json` com a lista de jogadores e suas notas.
 2. Execute o binário:
    ```bash
-   ./target/release/lp_solver
+   ./target/release/IraGpt
    ```
 3. Selecione os jogadores disponíveis no dia através da interface interativa.
 4. O programa exibirá a composição dos times balanceados.
