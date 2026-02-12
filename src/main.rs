@@ -230,7 +230,7 @@ fn main() {
 
     println!("--------resultado para copiar e colar-------------");
     for (team_idx, team) in balanced_teams.iter().enumerate() {
-        println!("Team {}:", colors[team_idx % colors.len()]);
+        println!("Time {}:", colors[team_idx % colors.len()]);
         for player in team {
             println!("{}", player.name);
         }
