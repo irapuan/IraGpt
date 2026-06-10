@@ -296,6 +296,10 @@ fn main() -> Result<(), AppError> {
 
     save_cache(&selected_items, saved_selections_file)?;
 
+    let select_to_print: Vec<&String> = selected_items.iter().map(|player| &player.name).collect();
+
+    println!("Players selected: {:?}", select_to_print);
+
     let players_per_team = 5;
     let number_of_teams = selected_items.len() / players_per_team;
     let balanced_teams = balance_teams(&selected_items, number_of_teams, players_per_team)?;
